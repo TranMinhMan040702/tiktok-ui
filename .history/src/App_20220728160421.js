@@ -13,12 +13,11 @@ function App() {
 
                         let Layout = DefaultLayout;
 
-                        if (route.layout) {
-                            Layout = route.layout;
-                        } else if (route.layout === null) {
+                        if (route.layout === null) {
                             Layout = Fragment;
+                        } else {
+                            Layout = route.layout;
                         }
-
                         return (
                             <Route
                                 key={index}
