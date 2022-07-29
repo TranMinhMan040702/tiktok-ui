@@ -4,10 +4,8 @@ import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faSpinner, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
-import AccountItem from '~/components/AccountItem';
 
 const cx = classNames.bind(styles);
 
@@ -16,8 +14,8 @@ function Header() {
 
     useEffect(() => {
         setTimeout(() => {
-            setSearchResult([]);
-        }, 0);
+            setSearchResult([1, 2]);
+        }, 3000);
     });
 
     return (
@@ -28,14 +26,11 @@ function Header() {
                     interactive
                     visible={searchResult.length > 0}
                     render={(attrs) => (
-                        <div className={cx('search-result')} tabIndex="-1" {...attrs}>
-                            <PopperWrapper>
-                                <h4 className={cx('search-title')}>Accounts</h4>
-                                <AccountItem />
-                                <AccountItem />
-                                <AccountItem />
-                            </PopperWrapper>
-                        </div>
+                        <PopperWrapper>
+                            <div className={cx('rearch-result')} tabIndex="-1" {...attrs}>
+                                Ket qua
+                            </div>
+                        </PopperWrapper>
                     )}
                 >
                     <div className={cx('search')}>
