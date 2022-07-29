@@ -1,0 +1,42 @@
+.wrapper {
+    width: 100%;
+    height: var(--default-layout-header-height, 60px);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+}
+
+.search {
+    width: 361px;
+    height: 46px;
+    padding: 12px 16px;
+    background-color: #f1f1f2;
+    border-radius: 92px;
+
+    input {
+        color: 8282828;
+        font-size: 1.6rem;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.clear {
+}
+
+.loading {
+}
+
+.search-btn {
+}
