@@ -52,8 +52,9 @@ function Header() {
                     </div>
                 </Tippy>
                 <div className={cx('actions')}>
-                    <Button text>Upload</Button>
-                    <Button primary>Log in</Button>
+                    <Button primary href="https://www.tiktok.com/" target="_blank">
+                        Log in
+                    </Button>
                 </div>
             </div>
         </header>
