@@ -37,6 +37,8 @@ const MENU_ITEMS = [
     },
 ];
 
+console.log(MENU_ITEMS);
+
 function Header() {
     const [searchResult, setSearchResult] = useState([]);
 

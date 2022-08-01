@@ -8,7 +8,6 @@ import {
     faMagnifyingGlass,
     faEllipsisVertical,
     faEarthAsia,
-    faKeyboard,
 } from '@fortawesome/free-solid-svg-icons';
 
 import Button from '~/components/Button';
@@ -17,7 +16,6 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
-import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -25,15 +23,6 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'English',
-    },
-    {
-        icon: <FontAwesomeIcon icon={faQuestionCircle} />,
-        title: 'Feedback and help',
-        to: '/feedback',
-    },
-    {
-        icon: <FontAwesomeIcon icon={faKeyboard} />,
-        title: 'Keyboard shortcuts',
     },
 ];
 
@@ -80,7 +69,7 @@ function Header() {
                     <Button text>Upload</Button>
                     <Button primary>Log in</Button>
 
-                    <Menu items={MENU_ITEMS}>
+                    <Menu items>
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />
                         </button>

@@ -8,7 +8,6 @@ import {
     faMagnifyingGlass,
     faEllipsisVertical,
     faEarthAsia,
-    faKeyboard,
 } from '@fortawesome/free-solid-svg-icons';
 
 import Button from '~/components/Button';
@@ -29,10 +28,9 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faQuestionCircle} />,
         title: 'Feedback and help',
-        to: '/feedback',
     },
     {
-        icon: <FontAwesomeIcon icon={faKeyboard} />,
+        icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'Keyboard shortcuts',
     },
 ];
@@ -80,7 +78,7 @@ function Header() {
                     <Button text>Upload</Button>
                     <Button primary>Log in</Button>
 
-                    <Menu items={MENU_ITEMS}>
+                    <Menu items>
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />
                         </button>
